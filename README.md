@@ -20,20 +20,19 @@ This project employs Beautiful Soup to webscrape Google News articles of user de
 
 - *date_string_type_to_time_type:*
 
-The date_string_type_to_time_type function (called from the main google_search_sentiment_analysis function) takes the news articles string date and converts it into a date object. The string input from the articles can come in many forms (1 day ago, 2 weeks ago, 2 months ago, 1 hour ago, etc.) The output of this function is always in the YYYY/MM/DD format necessary for plotting the sentiment in a time series plot.
+The *date_string_type_to_time_type* function (called from the main google_search_sentiment_analysis function) takes the news articles string date and converts it into a date object. The string input from the articles can come in many forms (17 mins ago, 1 day ago, 2 weeks ago, 2 months ago, 1 hour ago, etc.) The output of this function is always a date object in the YYYY/MM/DD format necessary for plotting the sentiment in a time series plot.
 
 - *plot_sentiment_analysis:*
 
-The plot_sentiment_analysis function (called from the main google_search_sentiment_analysis function) takes two csv inputs: 1 week & the user defined historical range. It plots two pie charts on the top half of the graph which show the negative, nuetral, and positive sentiment for each timeframe and one time series chart on the bottom half which shows the compound sentiment score of each article over the historical time frame. Titles and labels are dynamically updated and a static image and dynamic html link of the graph is saved into the projects working directory.
+The *plot_sentiment_analysis* function (called from the primary *google_search_sentiment_analysis* function) takes two csv inputs: **1 week** & the user defined **historical range**. It plots two pie charts on the top half of the graph which display the negative, nuetral, and positive sentiment for each timeframe and one time series chart on the bottom half which shows the compound sentiment score of each article over the historical time frame. Titles and labels are dynamically updated and a static image and dynamic html link of the graph is saved into the projects working directory.
 
 - *google_search_sentiment_analysis:*
 
-The google_search_sentiment_analysis is the primary project function which uses Requests and Beautiful Soup to webscrape 100 news article results from Google. It then pulls out the title, publisher, link, and date before running a sentiment analysis on the title using VADER. All of this info is then written to a csv for each timeframe scenario.
+The *google_search_sentiment_analysis* is the primary project function which uses Requests and Beautiful Soup to webscrape 100 news article results from Google for each search topic. It then pulls out the title, publisher, link, and date before running a sentiment analysis on the title using VADER. All of this info is written to a csv.
 
 # example output
 
 ![image](https://user-images.githubusercontent.com/87350911/133185630-65c0a542-2d40-43b6-9ede-049196fe2c38.png)
-
 
 # References
 
