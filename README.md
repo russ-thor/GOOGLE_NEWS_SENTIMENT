@@ -31,6 +31,9 @@ The google_search_sentiment_analysis is the primary project function which uses 
 
 # example output
 
+![image](https://user-images.githubusercontent.com/87350911/133185630-65c0a542-2d40-43b6-9ede-049196fe2c38.png)
+
+
 # References
 
 Hutto, C.J. & Gilbert, E.E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. Eighth International Conference on Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014.
